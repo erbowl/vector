@@ -8646,6 +8646,7 @@ dependencies = [
  "cidr-utils",
  "criterion",
  "csv",
+ "dashmap 5.1.0",
  "datadog-filter",
  "datadog-grok",
  "datadog-search-syntax",
