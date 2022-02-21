@@ -64,7 +64,7 @@ pub mod json {
     where
         T: ?Sized + Serialize,
     {
-        let mut bytes = BytesMut::new();
+        let mut bytes = BytesMut::with_capacity(128);
         serde_json::to_writer((&mut bytes).writer(), value)?;
         Ok(bytes)
     }
